@@ -506,8 +506,10 @@ function setPlotContext(gd, config) {
     }
 
     // Check if gd has a specified widht/height to begin with
-    context._hasZeroHeight = context._hasZeroHeight || gd.clientHeight === 0;
-    context._hasZeroWidth = context._hasZeroWidth || gd.clientWidth === 0;
+    //context._hasZeroHeight = context._hasZeroHeight || gd.clientHeight === 0;
+    //context._hasZeroWidth = context._hasZeroWidth || gd.clientWidth === 0;
+    context._hasZeroHeight = 0;
+    context._hasZeroWidth = 0;
 
     // fill context._scrollZoom helper to help manage scrollZoom flaglist
     var szIn = context.scrollZoom;

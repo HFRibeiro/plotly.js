@@ -1602,8 +1602,10 @@ plots.plotAutoSize = function plotAutoSize(gd, layout, fullLayout) {
         // but don't enforce any ratio restrictions
         var computedStyle = isPlotDiv ? window.getComputedStyle(gd) : {};
 
-        newWidth = getComputedSize(computedStyle.width) || getComputedSize(computedStyle.maxWidth) || fullLayout.width;
-        newHeight = getComputedSize(computedStyle.height) || getComputedSize(computedStyle.maxHeight) || fullLayout.height;
+        //newWidth = getComputedSize(computedStyle.width) || getComputedSize(computedStyle.maxWidth) || fullLayout.width;
+        //newHeight = getComputedSize(computedStyle.height) || getComputedSize(computedStyle.maxHeight) || fullLayout.height;
+        newWidth = 100;
+		newHeight = 100;
 
         if(isNumeric(frameMargins) && frameMargins > 0) {
             var factor = 1 - 2 * frameMargins;
